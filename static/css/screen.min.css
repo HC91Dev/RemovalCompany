@@ -668,6 +668,7 @@ body {
 .team__member-descr {
   text-align: left;
   line-height: 1.3;
+  font-size: 11px;
 }
 .team__member-soc {
   display: block;
@@ -916,9 +917,21 @@ body {
 }
 
 .fixed-size {
-  width: 500px;
-  height: 400px;
+  max-width: 100%; /* Set maximum width to 100% of its parent container */
+  max-height: 100%; /* Set maximum height to 100% of its parent container */
+  width: auto; /* Allow the width to adjust based on content and screen width */
+  height: auto; /* Allow the height to adjust based on content and screen height */
+  
 }
+
+/* You can add media queries for different screen sizes if needed */
+@media (max-width: 500px) {
+  .fixed-size {
+    width: 100%; /* Adjust to 100% width on screens smaller than 500px */
+    height: auto; /* Allow the height to adjust based on content and screen height */
+  }
+}
+
 
 .white {
   color: #ffffff
