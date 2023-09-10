@@ -457,24 +457,39 @@ body {
 .portfolio__content {
   margin: 45px auto 60px;
 }
+/* Default styles for .portfolio__item */
 .portfolio__item {
   position: relative;
   display: inline-block;
-  width: 180px;
-  height: 180px;
-  margin: 0 30px 35px;
-  -webkit-border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin:0 20px 25px;
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .portfolio__item {
+    width: 70px; /* Adjust the size for smaller screens */
+    height: 70px; /* Adjust the size for smaller screens */
+    margin: 0 20px 25px; /* Adjust margins for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */
+
+/* The rest of your CSS remains the same */
 .portfolio__item.is-hidden {
   display: none;
 }
+
 .portfolio__item-img {
   display: inline-block;
   height: 100%;
   margin: 0 auto;
 }
+
 .portfolio__item-caption {
   visibility: hidden;
   position: absolute;
@@ -483,44 +498,47 @@ body {
   top: 0;
   padding-top: 35px;
   background-color: #dd0824;
-  background-color: #dd0824;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   color: #fff;
   opacity: 0;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .portfolio__item:hover .portfolio__item-caption {
   opacity: 1;
   visibility: visible;
 }
+
 .portfolio__item-title {
   display: block;
   font-size: 18px;
   margin-bottom: 10px;
 }
+.portfolio__item-icon i {
+  font-size: 20px; /* Adjust the size for smaller screens */
+}
+
+
 .portfolio__item-title:before {
   content: "\f002";
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: 0 auto 20px;
   padding-top: 10px;
-  background-color: #ccc;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: FontAwesome;
   text-align: center;
 }
+
 .portfolio__item-cat {
   display: block;
   font-size: 15px;
 }
+
+
 .promo {
   width: 100%;
   min-height: 455px;
@@ -923,7 +941,6 @@ body {
   height: auto; /* Allow the height to adjust based on content and screen height */
   
 }
-
 
 /* You can add media queries for different screen sizes if needed */
 @media (max-width: 500px) {
