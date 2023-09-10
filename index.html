@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home</title>
+    <title>MrMoovah</title>
     <meta name="description" content="Page-specific description">
     <meta name="keywords" content="Page-specific keywords">
     <link rel="shortcut icon" href="favicon.ico">
@@ -17,19 +17,24 @@
     <link rel="stylesheet" href="static/css/screen.min.css">
     <link rel="stylesheet" href="static/css/custom.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body><!-- $Page header-->
-    <header class="page-header js-header">
 
+    <header class="page-header js-header">
+        <img class="page-header__logo" src="static/images/mrmSmall.jpg" alt="Logo">
         <div class="page-header__inner">
-            <img class="page-header__logo" src="static/images/logo.png" alt="Logo">
+
             <div class="page-header__logo">
 
 
-                <h1>Removals</h1>
+                <h1>Mr Moovah</h1>
             </div>
+
             <nav class="page-header__nav js-nav">
+
                 <ul>
                     <li><a class="page-header__nav-link js-anchor js-link is-active" href="#home">Home</a></li>
                     <li><a class="page-header__nav-link js-anchor js-link" href="#portfolio">Services</a></li>
@@ -41,124 +46,245 @@
 
     </header><!-- $Promo section-->
     <section class="promo js-jumbo" id="home">
-        <h2 class="promo__title">Your Smooth Move Awaits</h2>
-        <p class="promo__descr">Welcome to [Company Name], your dedicated partner for seamless moving experiences. Our
-            commitment to excellence ensures that your belongings are handled with care, from packing to delivery, so
-            you can focus on starting anew.</p>
-        <a class="promo__btn" href="#">Services</a>
-        <a class="promo__go-next js-anchor" href="#portfolio">Learn More</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="iframe-carousel">
+                        <div class="img-carousel">
+                            <img src="https://scontent.fman2-2.fna.fbcdn.net/v/t39.30808-6/310985734_114075084798124_3149804842536912483_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=PS55bAZdaSgAX-kja-w&_nc_oc=AQlVhkEnishPZgMlwKx530RkGc8PwGKawSZrwXytu90pZn1BUpDRsLU9TxF1OtMqGZg&_nc_ht=scontent.fman2-2.fna&oh=00_AfCW01Uy457cd-0ftO-0ER2juTr5Bjbs9N-KUVY860P0hA&oe=6503244B"
+                                class="fixed-size">
+                        </div>
+                        <div class="img-carousel">
+                            <img src="https://scontent.fman2-2.fna.fbcdn.net/v/t39.30808-6/306816273_112654778259823_639843839145866464_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_ohc=Cbb3Wvu6N1UAX__Hbx1&_nc_ht=scontent.fman2-2.fna&oh=00_AfDzk7QGosKDSewKYC_RiqAAjZp_OTrhtfMxmlZA9-dFtQ&oe=6501FFD8"
+                                class="fixed-size">
+                        </div>
+                        <div class="img-carousel">
+                            <img src="https://scontent.fman2-1.fna.fbcdn.net/v/t39.30808-6/315403730_126375400234759_6696160568187329233_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=49d041&_nc_ohc=-CPkqtGOHQEAX_BdFPU&_nc_ht=scontent.fman2-1.fna&oh=00_AfC7A9spBEl_jOR_-3kVRRL4c5ItFoYQbAStbb2xiG_bDg&oe=650194A7"
+                                class="fixed-size">
+                        </div>
+                        <div class="img-carousel">
+                            <img src="https://scontent.fman2-1.fna.fbcdn.net/v/t39.30808-6/306746638_108446055347362_8881617620082697942_n.png?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=b9JCg6bQFYkAX-nN-TT&_nc_ht=scontent.fman2-1.fna&oh=00_AfAKDbtRndpW5az0sUuVdo-0LoBSkQXL0onX34-jO0dAXQ&oe=65037790"
+                                class="fixed-size">
+                        </div>
+                        <!-- <div class="img-carousel">
+                    <img src="#" class="fixed-size">
+                  </div> -->
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="promo__title">Your Smooth Move Awaits</h2>
+                    <h4 class="promo__title2"> Your A-Z removal company. We have fulfilled 100% of our obligated jobs!
+                    </h4>
+
+                    <p class="white">
+                        <br>
+                        * We can move you anywhere in the UK, no job too big or small.<br>
+                        * Fully insured<br>
+                        * All staff uniformed<br>
+                        * A percentage of our staff are ex-military<br>
+                        * Efficient, tidy, and professional
+                    </p>
+                    <a class="promo__btn" href="#portfolio">Services</a>
+                    <a class="promo__go-next js-anchor" href="#portfolio">Learn More</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="portfolio js-portfolio" id="portfolio">
+        <div class="contacts">
+            <a href="tel:07545 119596" class="contact__card-item tel1 type">07545 119596</a>&nbsp;&nbsp;
+            <a class="contact__card-item email1" href="mailto:info@companyname.com">info@companyname.com</a>
+        </div>
         <div class="portfolio__inner">
-            <h2 class="portfolio__title">Services</h2>
-            <p class="portfolio__descr">Comprehensive relocation solutions encompassing professional packing, efficient
-                transportation, and secure storage options.</p>
-            <nav class="portfolio__filter">
-                <ul>
-                    <li class="portfolio__filter-btn is-selected js-filter" data-filter="all">All</li>
-                    <li class="portfolio__filter-btn js-filter" data-filter="packing"><i class="fas fa-box"></i>Packing
-                    </li>
-                    <li class="portfolio__filter-btn js-filter" data-filter="transport"><i
-                            class="fas fa-truck"></i>Transport</li>
-                    <li class="portfolio__filter-btn js-filter" data-filter="storage"><i
-                            class="fas fa-warehouse"></i>Storage</li>
-
-                </ul>
-            </nav>
-            <ul class="portfolio__content">
-                <li class="portfolio__item js-item" data-cat="all packing"><a href="#">
-                        <div class="portfolio__item-icon"><i class="fas fa-box"></i></div>
-                        <div class="portfolio__item-caption">
-                            <span class="portfolio__item-title">Packing Services</span>
-                            <span class="portfolio__item-cat">Packing</span>
-                        </div>
-                    </a></li>
-                <li class="portfolio__item js-item" data-cat="all transport"><a href="#">
-                        <div class="portfolio__item-icon"><i class="fas fa-truck"></i></div>
-                        <div class="portfolio__item-caption">
-                            <span class="portfolio__item-title">Transport Services</span>
-                            <span class="portfolio__item-cat">Transport</span>
-                        </div>
-                    </a></li>
-                <li class="portfolio__item js-item" data-cat="all storage"><a href="#">
-                        <div class="portfolio__item-icon"><i class="fas fa-warehouse"></i></div>
-                        <div class="portfolio__item-caption">
-                            <span class="portfolio__item-title">Storage Services</span>
-                            <span class="portfolio__item-cat">Storage</span>
-                        </div>
-                    </a></li>
-                <!-- Add more service items as needed -->
-            </ul>
-
-
-        </div>
-    </section><!-- $Team section-->
-    <section class="team" id="team">
-        <div class="team__inner">
-            <h2 class="team__title">About us</h2>
-            <p class="team__descr">Local removals comapny etc. etc.</p>
-
-            <div class="team__member"><img src="static/images/ava2.jfif" alt="Jhonie Doe">
-                <div class="team__member-info">
-                    <h3 class="team__member-name">NAME</h3><span class="team__member-role">Owner</span>
-                    <p class="team__member-descr">Company History</p>
-                </div>
-                <ul class="team__member-soc">
-                    <li><a class="team__member-icon fb" href="#">My Facebook</a></li>
-                    <li><a class="team__member-icon gplus" href="#">My Google+</a></li>
-                </ul>
+            <br>
+            <h2 class="portfolio__title">Reviews</h2>
+            <div class="portfolio__inner">
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flabelleblancteeth%2Fposts%2Fpfbid02vkHs8JZtoUDo1APJDipYMKG3jJtZRUyTmPdHLvEZ9x25UvKyLieUQ9zjNTkNzBKQl&show_text=true&width=500"
+                    width="500" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
+            <div class="portfolio__inner">
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcameron.reid.5876%2Fposts%2Fpfbid02DZKYGwjvidcDMij9PEga9TxUqFSHZo2xyePPW4oXqcTvKbn5t6WDg6smzWMKYLjBl&show_text=true&width=500"
+                    width="500" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <!-- Add more iframe-review divs for additional reviews -->
+            <br>
+            <section class="portfolio" id="services">
+                <div class="container">
+                    <h2 class="portfolio__title">Services</h2>
+                    <p class="portfolio__descr">Comprehensive relocation solutions encompassing professional packing,
+                        efficient transportation, and secure storage options.</p>
+                    <nav class="portfolio__filter">
+                        <ul>
+                            <li class="portfolio__filter-btn is-selected js-filter" data-filter="all"><i
+                                    class="fas fa-th"></i> All</li>
+                            <li class="portfolio__filter-btn js-filter" data-filter="local-removals"><i
+                                    class="fas fa-home"></i> Local removals</li>
+                            <li class="portfolio__filter-btn js-filter" data-filter="long-haul-removals"><i
+                                    class="fas fa-truck-moving"></i> Long haul removals</li>
+                            <li class="portfolio__filter-btn js-filter" data-filter="commercial-moves"><i
+                                    class="fas fa-building"></i> Commercial moves</li>
+                            <li class="portfolio__filter-btn js-filter" data-filter="man-van-services"><i
+                                    class="fas fa-shipping-fast"></i> Man & van services</li>
+                            <br><br>
+                            <li class="portfolio__filter-btn js-filter" data-filter="waste-clearance"><i
+                                    class="fas fa-trash"></i> Waste clearance</li>
+                            <li class="portfolio__filter-btn js-filter" data-filter="office-clearance"><i
+                                    class="fas fa-briefcase"></i> Office clearance</li>
+                        </ul>
 
+                    </nav>
+                    <ul class="portfolio__content">
+                      
+                        <!-- Replace the existing service items with the new services -->
+                        <li class="portfolio__item js-item" data-cat="all local-removals"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-home grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Local Removals" class="portfolio__item-title">Local Removals</span>
+                                    
+                                </div>
+                            </a></li>
+                        <li class="portfolio__item js-item" data-cat="all long-haul-removals"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-truck-moving grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Long Haul Removals" class="portfolio__item-title">Long Haul Removals</span>
+                                    
+                                </div>
+                            </a></li>
+                        <li class="portfolio__item js-item" data-cat="all commercial-moves"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-building grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Commercial Moves" class="portfolio__item-title">Commercial Moves</span>
+                                    
+                                </div>
+                            </a></li>
+                        <li class="portfolio__item js-item" data-cat="all man-van-services"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-shipping-fast grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Man & Van Services" class="portfolio__item-title">Man & Van Services</span>
+                                    
+                                </div>
+                            </a></li>
+                        <li class="portfolio__item js-item" data-cat="all waste-clearance"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-trash grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Waste Clearance" class="portfolio__item-title">Waste Clearance</span>
+                                    
+                                </div>
+                            </a></li>
+                        <li class="portfolio__item js-item" data-cat="all office-clearance"><a href="#">
+                                <div class="portfolio__item-icon"><i class="fas fa-briefcase grey"></i></div>
+                                <div class="portfolio__item-caption">
+                                    <span value="Office Clearance" class="portfolio__item-title">Office Clearance</span>
+                                    
+                                </div>
+                            </a></li>
+                        <!-- End of new services -->
+                    </ul>
+                </div>
+                <div id="modalContainer"></div>
+            </section><!-- $Team section-->
         </div>
-    </section><!-- $Contact section-->
-    <section class="contact" id="contact">
-        <div class="contact__inner">
-            <h2 class="contact__title">Contact us</h2>
-            <p class="contact__descr">Contact us with any queries!</p>
-            <form class="contact__form">
-                <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name">
-                <input class="contact__form-input" id="email" type="email" name="email" placeholder="Your email">
-                <textarea class="contact__form-tarea" id="message" name="message" placeholder="Your message"></textarea>
-                <input class="contact__form-submit" type="button" value="Submit" id="submit-button">
-            </form>
+        <section class="team" id="team">
+            <div class="team__inner">
 
-            <script>
-                const submitButton = document.getElementById("submit-button");
 
-                submitButton.addEventListener("click", function () {
-                    const name = encodeURIComponent(document.getElementById("name").value);
-                    const email = encodeURIComponent(document.getElementById("email").value);
-                    const message = encodeURIComponent(document.getElementById("message").value);
+                <h2 class="team__title">About us</h2>
+                <p class="team__descr">Local removals comapny etc. etc.</p>
 
-                    const emailAddress = "hannahncargill1991@gmail.com";
-                    const subject = "Contact Form Submission";
-                    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-
-                    const mailtoURL = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${body}`;
-
-                    window.location.href = mailtoURL;
-                });
-            </script>
-            <div class="contact__card vcard">
-                <h3 class="contact__card-title">Information</h3>
-                <div class="contact__card-item place">
-                    <div class="fn org">Removals</div>
-                    <div class="adr">
-                        <div class="street-address">123 street</div><span class="locality">A City</span>,<span
-                            class="region"> County</span>
+                <div class="team__member"><img src="static/images/mrmSmall.jpg" alt="Jhonie Doe">
+                    <div class="team__member-info">
+                        <h3 class="team__member-name">MrMoovah</h3><span class="team__member-role"></span>
+                        <p class="team__member-descr">Home removal company</p>
                     </div>
+                    <ul class="team__member-soc">
+                        <li><a class="team__member-icon fb" href="https://www.facebook.com/militaryremovals">My
+                                Facebook</a></li>
+                        <!-- <li><a class="team__member-icon gplus" href="#">My Google+</a></li> -->
+                    </ul>
                 </div>
-                <div class="contact__card-item tel">+44<span class="type"></span>123456789</div>
-                <a class="contact__card-item email" href="#">info@companyname.com</a>
+
+            </div>
+        </section><!-- $Contact section-->
+        <section class="contact" id="contact">
+            <div class="contact__inner">
+                <h2 class="contact__title">Contact us</h2>
+                <p class="contact__descr">Contact us with any queries!</p>
+                <form class="contact__form">
+                    <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name">
+                    <input class="contact__form-input" id="email" type="email" name="email" placeholder="Your email">
+                    <textarea class="contact__form-tarea" id="message" name="message"
+                        placeholder="Your message"></textarea>
+                    <input class="contact__form-submit" type="button" value="Submit" id="submit-button">
+                </form>
+
+                <script>
+                    const submitButton = document.getElementById("submit-button");
+
+                    submitButton.addEventListener("click", function () {
+                        const name = encodeURIComponent(document.getElementById("name").value);
+                        const email = encodeURIComponent(document.getElementById("email").value);
+                        const message = encodeURIComponent(document.getElementById("message").value);
+
+                        const emailAddress = "hannahncargill1991@gmail.com";
+                        const subject = "Contact Form Submission";
+                        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+
+                        const mailtoURL = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+                        window.location.href = mailtoURL;
+                    });
+                </script>
+                <div class="contact__card vcard">
+                    <h3 class="contact__card-title">Information</h3>
+                    <div class="contact__card-item place">
+                        <div class="fn org">Removals</div>
+                        <div class="adr">
+                            <div class="street-address">123 street</div><span class="locality">A City</span>,<span
+                                class="region"> County</span>
+                        </div>
+                    </div>
+                    <div class="contact__card-item  "><span class="type"></span><a class="contact__card-item tel "
+                            href="tel:07545 119596">07545 119596</a></div>
+                    <a class="contact__card-item email" href="#">info@companyname.com</a>
+                </div>
+            </div>
+        </section><!-- $Page footer-->
+        <footer class="page-footer">
+            <div class="page-footer__inner"><span class="page-footer__copyright">&copy; Copyright 2023</span><a
+                    class="page-footer__gotop js-anchor" href="#home">Go to top</a></div>
+        </footer>
+        <script src="static/js/body.min.js"></script>
+        <script src="static/js/modal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Create the modal template with style="display: none;" -->
+<div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="serviceModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="serviceModalLabel">Service Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="service-description"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-    </section><!-- $Page footer-->
-    <footer class="page-footer">
-        <div class="page-footer__inner"><span class="page-footer__copyright">&copy; Copyright 2023</span><a
-                class="page-footer__gotop js-anchor" href="#home">Go to top</a></div>
-    </footer>
-    <script src="static/js/body.min.js"></script>
+    </div>
+</div>
 </body>
 
 </html>
