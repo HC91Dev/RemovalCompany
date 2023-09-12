@@ -443,9 +443,10 @@ body {
   font-size: 14px;
   padding: 1pc;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 7px;
   color: #fff;
   background-color: #dd0824;
+  border: 1px solid #000; /* Add your desired border properties here */
   -webkit-transition: background-color 0.2s;
   -o-transition: background-color 0.2s;
   transition: background-color 0.2s;
@@ -496,7 +497,7 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  padding-top: 35px;
+  font-size: 10px;
   background-color: #dd0824;
   border-radius: 50%;
   color: #fff;
@@ -506,13 +507,15 @@ body {
 
 .portfolio__item:hover .portfolio__item-caption {
   opacity: 1;
+  color: #ecf0f1;
   visibility: visible;
 }
 
 .portfolio__item-title {
   display: block;
-  font-size: 18px;
+  font-size: 10px;
   margin-bottom: 10px;
+  color: rgb(255, 255, 255);
 }
 .portfolio__item-icon i {
   font-size: 20px; /* Adjust the size for smaller screens */
@@ -530,6 +533,7 @@ body {
   padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: FontAwesome;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -659,7 +663,7 @@ body {
 .team__member {
   display: inline-block;
   position: relative;
-  width: 220px;
+  width: 400px;
   margin: 0 30px 30px;
   background-color: #fff;
 }
@@ -687,6 +691,7 @@ body {
   text-align: left;
   line-height: 1.3;
   font-size: 11px;
+  color: #323232;
 }
 .team__member-soc {
   display: block;
@@ -715,7 +720,7 @@ body {
 }
 .team__member-icon {
   display: block;
-  width: 45px;
+  width: 45px;          
   height: 50px;
   margin-left: -3px;
   color: #fff;
@@ -889,7 +894,8 @@ body {
   }
 }
 .portfolio__item-icon {
-    font-size: 75px;
+    font-size:23px;
+    color: #ecf0f1;
     background-color: #dd0824;
 }
 .grey {
