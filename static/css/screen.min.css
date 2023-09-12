@@ -668,12 +668,12 @@ body {
   background-color: #fff;
 }
 .team__member img {
-  width: 100%;
+  width: 80%;
 }
 .team__member-info {
   display: block;
   width: 100%;
-  height: 190px;
+  height: 100%;
   padding: 15px 10px;
 }
 .team__member-name {
@@ -683,7 +683,7 @@ body {
 .team__member-role {
   display: block;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 12px;
   width: 100%;
   height: 100%;
   font-style: italic;
