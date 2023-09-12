@@ -8,7 +8,8 @@ $(document).ready(function () {
       "Commercial Moves":  "Our Commercial Moves service is tailored to meet the unique requirements of businesses and organizations. We specialize in relocating offices, stores, and other commercial spaces efficiently and professionally. With a focus on minimizing downtime and disruption to your operations, our experienced team ensures a smooth transition to your new commercial location. We handle all aspects of the move, including packing, transportation, and setup, so you can concentrate on your business while we take care of the move.",
       "Man & Van Services": "Our Man & Van Services provide a convenient and cost-effective solution for small-scale moves and transportation needs. Whether you need to transport a few items or a small apartment's worth of belongings, our experienced team and well-equipped van are ready to assist you. From pickups and deliveries to small residential moves, our Man & Van Services offer reliability and efficiency. We handle your items with care and ensure they reach their destination safely.",
       "Waste Clearance": "Our Waste Clearance service is designed to help you responsibly and efficiently dispose of unwanted items and waste. Whether you have household clutter, old furniture, or construction debris, our team will handle the removal and disposal process for you. We prioritize environmentally friendly practices, ensuring that recyclable materials are properly recycled and waste is disposed of in compliance with local regulations. Let us take care of the heavy lifting and cleanup, so you can enjoy a clutter-free space.",
-      "Office Clearance": "Our Office Clearance service is tailored to meet the needs of businesses looking to declutter, downsize, or relocate their office space. We provide efficient and secure removal of office furniture, equipment, and electronic waste. Our experienced team ensures the proper handling and disposal of confidential documents and sensitive materials, maintaining compliance with data protection regulations. With our Office Clearance service, you can streamline your workspace and focus on your core business activities, leaving the clearing and cleaning to us."
+      "Office Clearance": "Our Office Clearance service is tailored to meet the needs of businesses looking to declutter, downsize, or relocate their office space. We provide efficient and secure removal of office furniture, equipment, and electronic waste. Our experienced team ensures the proper handling and disposal of confidential documents and sensitive materials, maintaining compliance with data protection regulations. With our Office Clearance service, you can streamline your workspace and focus on your core business activities, leaving the clearing and cleaning to us",
+      "House Clearance": "Discover the convenience of our House Clearance Service. Whether you're moving, downsizing, or simply decluttering, our experienced team will efficiently clear your property, leaving it spotless. We're committed to eco-friendly disposal and competitive pricing. Contact us for a hassle-free solution today!"
     };
 
     // Return the relevant description based on the service name
@@ -42,14 +43,15 @@ $(document).ready(function () {
 
   // Handle click event for list items
   $(".portfolio__item a").click(function () {
+    // e.preventDefault(); // Prevent the default behavior of the anchor tag
     const serviceName = $(this).find(".portfolio__item-title").attr("value");
-    const description = getServiceDescription(serviceName);
-    $("#serviceModal .service-description").html(description);
+  const description = getServiceDescription(serviceName);
+  $("#serviceModal .service-description").html(description);
 
-    // Show the modal
-    $("#serviceModal").modal("show");
+  // Show the modal
+  $("#serviceModal").modal("show");
 
     // Scroll to the top of the modal
-    $("#serviceModal").animate({ scrollTop: 0 }, "fast");
+
   });
 });
